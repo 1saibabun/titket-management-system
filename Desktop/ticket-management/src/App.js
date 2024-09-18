@@ -4,6 +4,7 @@ import TicketStatus from './components/TicketStatus';
 import ConnectMember from './components/ConnectMember';
 import NestedJsonData from './components/NestedJsonData';
 import UserRegistration from './components/User-Registration/userRegistration';
+import Stopwatch from './components/Stop-Watch/StopWatch';
 
 function App() {
    const [activeComponent, setActiveComponent] = useState(null);
@@ -26,6 +27,9 @@ function App() {
      <button className="btn btn-primary mx-2" onClick={() => handleButtonClick('UserRegistration')}>
        User Registration
      </button>
+     <button className="btn btn-primary mx-2" onClick={() => handleButtonClick('StopWatch')}>
+       Stop Watch
+     </button>
    </div>
 
    {activeComponent === 'TicketManagement' && (
@@ -38,6 +42,7 @@ function App() {
 
    {activeComponent === 'NestedJsonData' && <NestedJsonData />}
    {activeComponent === 'UserRegistration' && <UserRegistration />}
+   {activeComponent === 'StopWatch' && <Stopwatch />} 
  </div>
   );
 };
