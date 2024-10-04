@@ -4,7 +4,7 @@ import TicketStatus from './components/TicketStatus';
 import ConnectMember from './components/ConnectMember';
 import NestedJsonData from './components/NestedJsonData';
 import UserRegistration from './components/User-Registration/userRegistration';
-import Stopwatch from './components/Stop-Watch/StopWatch';
+import Stopwatch from './components/Stop-Watch/Stop-Watch';
 import Data from './components/Data';
 
 function App() {
